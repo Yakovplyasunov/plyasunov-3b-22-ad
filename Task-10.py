@@ -1,7 +1,7 @@
-class Rectangle:
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-    def calculate_area(self):
-        return self.length * self.width
+    def print_info(self):
+        print(f'Человека зовут {self.name} и его возраст составляет {self.age}')
