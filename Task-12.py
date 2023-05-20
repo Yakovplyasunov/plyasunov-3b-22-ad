@@ -1,10 +1,11 @@
-class Dog:
-    def __init__(self, name, breed, age):
+class Student:
+    def __init__(self, name, surname, course, grades):
         self.name = name
-        self.breed = breed
-        self.age = age
+        self.surname = surname
+        self.course = course
+        self.grades = grades
 
-    def print_info(self):
-        print(f'Имя собаки: {self.name}')
-        print(f'Порода собаки: {self.breed}')
-        print(f'Возраст собаки: {self.age}')
+    def calculate_average_grade(self):
+        total_grades = sum(self.grades)
+        average_grade = total_grades / len(self.grades)
+        return average_grade
